@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+}
+
+html, body, .overnav-outer, .overnav-inner, .overnav-nav {
+    height: 100%;
+}
+
+.overnav-outer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.overnav-inner {
+    position: relative;
+    width: 100%;
+
+    left: 0 !important;
+    transform: translate3d(0, 0, 0);
+    transition: transform 500ms ease;
+    backface-visibility: hidden;
+}
+
+.overnav-nav {
+    z-index: 200;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+    padding-top: 5.25em;
+
+    height: 100%;
+    width: 70%;
+    background: #333333;
+
+    backface-visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+}
+
+.overnav-nav a {
+    display: block;
+    color: #b3b3b1;
+    padding: 15px 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    text-decoration: none;
+}
+
+.js-nav .overnav-inner {
+    transform: translate3d(70%, 0, 0) scale3d(1, 1, 1);
+}
+
+.overnav-close {
+    float: right;
+}
