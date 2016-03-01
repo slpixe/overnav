@@ -30,7 +30,8 @@ html, body, .overnav-outer, .overnav-inner, .overnav-nav {
 
     position: absolute;
     top: 0;
-    padding-top: 5.25em;
+    padding: 20px;
+    box-sizing: border-box;
 
     height: 100%;
     width: 70%;
@@ -56,4 +57,9 @@ html, body, .overnav-outer, .overnav-inner, .overnav-nav {
 
 .overnav-close {
     float: right;
+}
+
+.overnav-title {
+    font-family: 'bignoodletitling';
+    font-size: 33px;
 }

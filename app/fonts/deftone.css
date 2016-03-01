@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Deftone-Stylus';
+    src:url('Deftone-Stylus.ttf.woff') format('woff'),
+    url('Deftone-Stylus.ttf.svg#Deftone-Stylus') format('svg'),
+    url('Deftone-Stylus.ttf.eot'),
+    url('Deftone-Stylus.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

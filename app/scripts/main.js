@@ -7,7 +7,7 @@ var Overnav = (function(options){
     var defaults = {
         width: "200px",
         height: "200px",
-        button: document.querySelectorAll('.overnav-btn')
+        button: document.querySelectorAll('.overnav-btn, .overnav-close')
     }
 
     var _settings = defaults || {};
@@ -50,7 +50,7 @@ var Overnav = (function(options){
     function init(){
         console.log(_settings);
 
-        var btns = document.querySelectorAll('.overnav-btn');
+        var btns = _settings.button;
         for(var i = 0; i<btns.length; i++){
             btns[i].addEventListener('click', toggleNav, false);
         }
